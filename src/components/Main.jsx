@@ -3,7 +3,7 @@ import React from "react";
 function Main(){
 
     // Ruta de la imagen relativa al archivo js
-    const imagen = "/images/aplanadora.jpg";
+    const imagen = process.env.PUBLIC_URL + "/images/aplanadora.jpg";
 
 
     return (

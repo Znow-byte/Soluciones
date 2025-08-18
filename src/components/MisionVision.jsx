@@ -1,7 +1,7 @@
 import React from "react";
 
-const imgVision = "/images/planificacion-en-la-construccion.jpg"
-const imgMision = "/images/recurso-hormigon.jpg"
+const imgVision = process.env.PUBLIC_URL + "/images/planificacion-en-la-construccion.jpg"
+const imgMision = process.env.PUBLIC_URL + "/images/recurso-hormigon.jpg"
 
 function MisionVision() {
     return (

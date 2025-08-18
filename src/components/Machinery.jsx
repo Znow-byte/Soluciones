@@ -4,49 +4,49 @@ const machineryCards = [
     {
         title: "Placa vibratoria",
         className: "c-one pv",
-        img: "/images/placa-vibratoria.png",
+        img: process.env.PUBLIC_URL + "/images/placa-vibratoria.png",
     },
     {
         title: "Vibrador de concreto",
         className: "c-two vc",
-        img: "/images/vibrador-de-concreto.png",
+        img: process.env.PUBLIC_URL + "/images/vibrador-de-concreto.png",
     },
     {
         title: "Doble rodillo",
         specs: "1 ton.",
         className: "c-three dr",
-        img: "/images/doble-rodillo.png",
+        img: process.env.PUBLIC_URL + "/images/doble-rodillo.png",
     },
     {
         title: "Cortadora de concreto",
         specs: 'Disco de corte de 14" y 18"',
         className: "c-one cc",
-        img: "/images/cortadora-de-concreto.png",
+        img: process.env.PUBLIC_URL + "/images/cortadora-de-concreto.png",
     },
     {
         title: "Bailarina compactadora",
         className: "c-two bc",
-        img: "/images/bailarina-compactadora.png",
+        img: process.env.PUBLIC_URL + "/images/bailarina-compactadora.png",
     },
     {
         title: "Mezcladora de concreto",
         className: "c-three mc",
-        img: "/images/mezcladora-de-concreto.png",
+        img: process.env.PUBLIC_URL + "/images/mezcladora-de-concreto.png",
     },
     {
         title: "Generador de energia eléctrica",
         className: "c-one gee",
-        img: "/images/generador-de-energia-electrica.png",
+        img: process.env.PUBLIC_URL + "/images/generador-de-energia-electrica.png",
     },
     {
         title: "Martillo neumático",
         className: "c-two mn",
-        img: "/images/martillo-neumatico.png",
+        img: process.env.PUBLIC_URL + "/images/martillo-neumatico.png",
     },
     {
         title: "Generador soldador",
         className: "c-three gs",
-        img: "/images/generador-soldador.png",
+        img: process.env.PUBLIC_URL + "/images/generador-soldador.png",
     },
 ];
 
