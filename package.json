@@ -9,6 +9,8 @@
   "name": "sr",
   "version": "1.0.0",
   "main": "index.js",
+  "homepage": "https://Znow-byte.github.io/Soluciones",
+
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -18,7 +20,6 @@
     "deploy": "gh-pages -d build"
   },
 
-  "homepage": "https://github.com/Znow-byte/Soluciones.git",
 
   "keywords": [],
   "author": "",
