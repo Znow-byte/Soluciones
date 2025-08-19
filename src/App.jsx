@@ -4,6 +4,8 @@ import Main from "./components/Main";
 import About from "./components/About";
 import Machinery from "./components/Machinery";
 import MisionVision from "./components/MisionVision";
+import ContactUs from "./components/ContactUs";
+import History from "./components/History";
 
 function App(){
     return (
@@ -11,8 +13,10 @@ function App(){
             <Topbar/>
             <Main/>
             <About/>
+            <History/>
             <Machinery/>
             <MisionVision/>
+            <ContactUs/>
         </div>
     );
 }

@@ -19,9 +19,17 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
 /* --------------------- TOPBAR --------------------- */
 
-.top-bar {
+#top-bar {
     width: 100%;
     position: fixed;
     display: flex;
@@ -31,6 +39,22 @@ body {
     padding-top: 2em;
     z-index: 1000;
     
+    .hamburger {
+        cursor: pointer;
+        width: 35px;
+        height: 35px;
+        background-color: #325db9;
+        border-radius: 50%;
+        
+        display: none;
+
+        svg {
+            fill: white;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
     div {
         width: 100%;
         padding: .5em;
@@ -39,6 +63,8 @@ body {
         align-items: center;
         padding-left: 10em;
         padding-right: 10em;
+        
+
 
         h2 {
 
@@ -56,6 +82,7 @@ body {
                 span {
                     color: #213d88;
                 }
+
             }
 
         }
@@ -86,6 +113,11 @@ body {
                 padding: .8em 1em;
                 border-radius: 2em;
                 color: white;
+
+                &:hover {
+                    color: white;
+
+            }
             }
         }
     }
@@ -98,6 +130,13 @@ body {
         }
     }
 }
+
+
+
+
+
+
+
 
 
 
@@ -135,6 +174,20 @@ body {
         
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -237,6 +290,60 @@ body {
 
 
 
+
+
+
+
+
+
+/* --------------------- HISTORY --------------------- */
+
+.history-content {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    color: #000000;
+    cursor: default;
+    box-shadow: 0 10px 30px #1f3d888c;
+    transition: transform 0.4s ease-in-out;
+
+    &:hover {
+        transform: translateY(-10px);
+        transition: transform 0.4s ease-in-out;
+    }
+
+    h2 {
+        font-size: 35px;
+        margin-bottom: 1em;
+        letter-spacing: 1px;
+        text-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+    }
+
+
+    p {
+        font-size: 15px;
+        line-height: 1.8;
+        width: 50%;
+        margin: 0 auto;
+        text-align: left;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 /* --------------------- MACHINERY --------------------- */
 
 .machinery-content {
@@ -279,7 +386,7 @@ body {
                 align-items: start;
                 justify-content: center;
                 padding-top: 2em;
-                cursor: pointer;
+                cursor: default;
                 transition: transform 0.3s ease-in-out; 
 
 
@@ -535,6 +642,8 @@ body {
 
 
 
+
+
 /* ----------------------- MISION Y VISION ----------------------- */
 
 .mision-vision-container {
@@ -652,6 +761,257 @@ body {
         }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------- CONTACT US ----------------------- */
+
+.contact-us-content {
+    height: 100vh;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .contact-us {
+        width: 80%;
+        height: 70vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h2 {
+            font-size: 40px;
+            margin-bottom: 1em;
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 1em;
+        }
+
+        .phone-contact {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1.5em;
+
+            svg {
+                height: 25px;
+                width: auto;
+                margin-bottom: 1em;
+            }
+
+            p {
+                line-height: 1.5;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .footer {
+        /* background-color: #E8F0FF; */
+        background-color: #1F3C88;
+        width: 95%;
+        height: 20vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.8em;
+        margin-bottom: .5em;
+        border-radius: .6em;
+        
+        .logo-address-contact {
+
+            h3 {
+                font-size: 25px;
+                /* color: #213D88; */
+                margin-bottom: 0.5em;
+                color: white;
+            }
+
+            .address {
+                font-weight: bolder;
+                margin-bottom: 1.3em;
+            }
+
+            p {
+                font-size: 15px;
+                margin-bottom: .5em;
+                color: #d1d1d1;
+
+            }
+
+            
+        }
+
+        .pages {
+            
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: 1.5em;
+
+                li {
+                    font-size: 15px;
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+                        /* color: black; */
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .social-media {
+            margin-top: 1em;
+            width: auto;
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                gap: 1em;
+
+                li {
+                    list-style: none;
+
+                    a {
+                        text-decoration: none;
+
+                        svg {
+                            /* fill: black; */
+                            fill: #d1d1d1;
+                            width: 30px;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+        }
+
+        .phrase-copyright {
+            text-align: center;
+            font-size: 15px;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 30%;
+            color: white;
+
+            .phrase {
+                margin-bottom: 1em;
+                padding-bottom: 1em;
+                width: 100%;
+                text-align: left;
+
+            }
+
+            .copyright{
+                border-top: 1px solid #525252;
+                padding-top: 1em;
+                width: 100%;
+                margin-bottom: 0;
+                
+            }
+        }
+
+    }
+}
+
+
+
+/* ----------------------- RESPONSIVE CONTACT US ----------------------- */
+
+@media (max-width: 1252px) {
+    
+    .contact-us-content {
+        height: auto;
+        .footer {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: auto;
+            gap: 2em;
+
+            .logo-address-contact {
+                text-align: center;
+                margin-bottom: 1em;
+                text-align: left;
+                width: 30%;
+            }
+
+            .pages {
+                margin-bottom: 1em;
+                width: 30%;
+
+
+                ul {
+                    li {
+                        text-align: left;
+                    }
+                }
+                
+
+            }
+
+            .social-media {
+                margin-bottom: 1em;
+            }
+
+            .phrase-copyright {
+                width: 30%;
+                text-align: left;
+                padding-top: 1em;
+                
+                .phrase {
+                    width: 100%;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -872,6 +1232,110 @@ body {
 
 
 
+@media (max-width: 1440px) {
+
+    #top-bar {
+        width: 100%;
+        height: 80px;
+        padding: 0;
+
+        
+        .hamburger {
+            display: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            margin-left: 1em
+        }
+        
+
+        div {
+            
+            padding: 0;
+            justify-content: start;
+            flex-direction: column;
+            gap: 3em;
+
+            h2 {
+                
+                font-size: 35px;
+
+            }
+        }
+
+        .menu {
+            display: none;
+            position: absolute;
+            top: 0;
+            flex-direction: column;
+            background-color: #fff;
+            width: 100%;
+            height: 100vh;
+            transform: translateX(100%);
+            transition: transform 0.8s ease-in-out;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .open {
+            transform: translateX(0);
+            transition: transform 0.8s ease-in-out;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul {
+            flex-direction: column;
+            gap: .5em;
+            width: 100%;
+            cursor: pointer;
+
+            li {
+                height: 100px;
+                width: 90%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0.8em;
+
+                &:hover {
+                    background-color: #E8F0FF;
+                    
+                    a{
+                        color: #213D88;
+
+                    }
+                }
+                
+                
+                a {
+                    margin-left: 0em;
+                    font-size: 22px;   
+
+                }
+                
+                .contact-us-a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100px;
+                    width: 100%;
+                    padding: 0;
+                }
+            }
+        }
+
+    }
+
+    
+
+   
+
+    
+}
+
+
 
 
 
@@ -912,79 +1376,8 @@ body {
         }
     }
 
-    .top-bar {
-        background-color: #ffffff;
-        display: none;
-        height: 100vh;
-        width: 30%;
-        padding: 0em;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    
 
-
-
-        
-        div {
-            height: 100vh;
-            
-            padding: 0;
-            padding-top: 2em;
-            padding-bottom: 2em;
-
-            justify-content: start;
-            flex-direction: column;
-            gap: 3em;
-
-            h2 {
-                
-                font-size: 28px;
-
-            }
-        }
-
-        ul {
-            flex-direction: column;
-            gap: .5em;
-            width: 100%;
-            cursor: pointer;
-
-            li {
-                height: 50px;
-                width: 90%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 0.8em;
-
-                &:hover {
-                    background-color: #E8F0FF;
-                    
-                    a{
-                        color: #213D88;
-
-                    }
-                }
-                
-                
-                a {
-                    margin-left: 0em;
-                    font-size: 17px;   
-
-                }
-                
-                .contact-us-a {
-                    background-color: #325db9;
-                    width: 100%;
-                    padding: .8em 1em;
-                    border-radius: 0.8em;
-                    color: white;
-                    text-align: center;
-                }
-            }
-        }
-
-    }
 
 
     .about-content {
@@ -1191,7 +1584,7 @@ body {
                     
                     .m-card {
                         flex-shrink: 0;
-                        
+
                         .content-machinery-card {
                             h3 {
                                 font-size: 25px;
@@ -1255,3 +1648,17 @@ body {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
