@@ -1224,6 +1224,7 @@ body {
         padding: 0em;
 
         .mision-content {
+
             img {
                 height: calc(70% - 60px);
                 width: 100%;
@@ -1241,17 +1242,15 @@ body {
 
             img {
                 height: calc(70% - 60px);
+                top: 50px;
                 width: 100%;
-
             }
             
             .vision {
                 height: 200px;
-                
+                bottom: 37%;                
             }
         }
     }
-
-    
 
 }
