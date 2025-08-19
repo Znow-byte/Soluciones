@@ -230,6 +230,15 @@ body {
 
 
 
+
+
+
+
+
+
+
+/* --------------------- MACHINERY --------------------- */
+
 .machinery-content {
     width: 90%;
     margin: 40px auto;
@@ -1072,4 +1081,177 @@ body {
             }
         }
     }
+}
+
+
+@media (max-width: 980px) {
+
+    .main-content {
+        padding-left: 5em;
+        padding-right: 5em;
+
+        .focusing {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5em;
+
+            h1 {
+                font-size: 55px;
+                margin-bottom: .5em;
+                width: 80%;
+
+                br {
+                    display: none;
+                }
+            }
+
+            p {
+                font-size: 22px;
+                width: 80%;
+
+                br {
+                    display: none;
+                }
+            }
+        }
+
+        .aplanadora-img {
+            height: 500px;
+            
+        }
+    }
+
+    .about-content {
+
+        .about-us {
+            width: 800px;
+      
+            h2 {
+                font-size: 45px;
+                margin-bottom: .8em;
+            }
+
+            p {
+                font-size: 22px;
+                margin-bottom: 6em;
+                width: 80%;
+                line-height: 1.6;
+                
+            }
+        }
+
+        .about-cards {
+            .card {
+                .content-card {
+                    text-align: center;
+
+                    h3 {
+                        margin-bottom: 1.5em;
+                        font-size: 25px;
+                    }
+
+                    p {
+                        font-size: 22px;
+                        line-height: 1.6;
+                        
+                    }
+                }
+
+            }
+        }
+    }
+
+    .machinery-content {
+        margin: 40px auto;
+        text-align: center;
+        height: 50vh;
+
+        h2 {
+            font-size: 45px;
+        }
+
+        .machinery-row {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+
+            .machinery-wrapper {
+                display: flex;                
+                overflow-x: auto;
+                scroll-snap-type: x mandatory; 
+                -webkit-overflow-scrolling: touch;
+                
+                .machinery-cards {
+                    min-width: 260px;              
+                    flex-shrink: 0;                
+                    scroll-snap-align: start;   
+                    
+                    .m-card {
+
+                        .content-machinery-card {
+                            h3 {
+                                font-size: 25px;
+                            }
+                            p {
+                                font-size: 20px;
+                            }                               
+                        }
+
+                        
+                    }
+                    .cc {
+                        .content-machinery-card {
+                            p {
+                                top: 120px;
+                            }
+
+                            img {
+                                top: 130px;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+
+        }
+    }
+
+    .mision-vision-container {
+        padding: 0em;
+
+        .mision-content {
+            img {
+                height: calc(70% - 60px);
+                width: 100%;
+            }
+            
+            .mision {
+                height: 200px;
+                bottom: 5%;
+                
+            }
+        }
+
+        .vision-content {
+            width: 100%;
+
+            img {
+                height: calc(70% - 60px);
+                width: 100%;
+
+            }
+            
+            .vision {
+                height: 200px;
+                
+            }
+        }
+    }
+
+    
+
 }
