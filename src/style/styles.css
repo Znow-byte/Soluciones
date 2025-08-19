@@ -39,6 +39,26 @@ body {
         align-items: center;
         padding-left: 10em;
         padding-right: 10em;
+
+        h2 {
+
+            span {
+                color: #b96832;
+            }
+
+            font-size: 28px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: color 6s ease;
+
+            &:hover {
+                color: #213d88;
+                span {
+                    color: #213d88;
+                }
+            }
+
+        }
     }
 
     ul {
@@ -55,7 +75,7 @@ body {
             a {
                 text-decoration: none;
                 margin-left: 2.5em;
-                font-size: 15px;   
+                font-size: 16px;   
                 color: black;   
                 transition: color 0.3s ease;
 
@@ -79,6 +99,15 @@ body {
     }
 }
 
+
+
+
+
+
+
+
+
+/* --------------------- MAIN CONTENT --------------------- */
 
 .main-content {
     height: 100vh;
@@ -107,69 +136,9 @@ body {
     }
 }
 
-@media (max-width: 1905px) {
-    .main-content {
-
-        .focusing {
-            
-            h1 {
-                font-size: 70px;
-            }
-
-            p {
-                font-size: 16px;
-            }
-        }
-
-        .aplanadora-img {
-            position: static;
-            height: 400px;
-
-        }
-    }
-}
-
-@media (max-width: 1757px) {
-    .main-content {
-
-        .focusing {
-            
-            h1 {
-                font-size: 60px;
-                width: 500px;
-            }
-           
-        }
-
-        .aplanadora-img {
-            position: static;
-            height: 350px;
-
-        }
-    }
-}
-
-@media (max-width: 1519px) {
-    .main-content {
-        background-color: blue;
-        .focusing {
-            
-            h1 {
-                font-size: 50px;
-            }
-           
-        }
-
-        .aplanadora-img {
-            position: static;
-            height: 300px;
-
-        }
-    }
-}
 
 
-/* --------------------- ABOUT PAGE --------------------- */
+/* --------------------- ABOUT --------------------- */
 
 .about-content {
     height: 100vh;
@@ -573,7 +542,7 @@ body {
         width: 50%;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: end;
         position: relative;
         
         img {
@@ -591,11 +560,11 @@ body {
             display: flex;
             justify-content: center;
             flex-direction: column;
-            width: 480px;
+            width: 80%;
             border-radius: 0.5em;
             height: 250px;
             position: absolute;
-            top: 300px;
+            bottom: 140px;
             padding: 1.5em;
             
             h2 {
@@ -609,13 +578,13 @@ body {
                 text-align: left;
                 color: #272727e0;
                 font-size: 30px;
-                margin-bottom: .8em;
+                margin-bottom: 0.8em;
             }
             
             p {
                 text-align: left;
                 font-size: 16px;
-                width: 480px;
+                width: 100%;
                 line-height: 1.6;
             }
         }
@@ -644,11 +613,11 @@ body {
             display: flex;
             justify-content: center;
             flex-direction: column;
-            width: 480px;
+            width: 80%;
             border-radius: 0.5em;
             height: 250px;
             position: absolute;
-            top: 300px;
+            bottom: 140px;
             padding: 1.5em;
             
             h2 {
@@ -662,13 +631,13 @@ body {
                 text-align: left;
                 color: #272727e0;
                 font-size: 30px;
-                margin-bottom: .8em;
+                margin-bottom: 0.8em;
             }
             
             p {
                 text-align: left;
                 font-size: 16px;
-                width: 480px;
+                width: 100%;
                 line-height: 1.6;
             }
         }
@@ -678,3 +647,429 @@ body {
 
 
 
+
+
+
+
+/* ----------------------- RESPONSIVE ----------------------- */
+
+
+
+@media (max-width: 1905px) {
+    .main-content {
+
+        .focusing {
+            
+            h1 {
+                font-size: 70px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        .aplanadora-img {
+            position: static;
+            height: 400px;
+
+        }
+    }
+
+
+}
+
+@media (max-width: 1757px) {
+    .main-content {
+
+        .focusing {
+            
+            h1 {
+                font-size: 60px;
+                width: 500px;
+            }
+           
+        }
+
+        .aplanadora-img {
+            position: static;
+            height: 350px;
+
+        }
+    }
+
+}
+
+@media (max-width: 1641px) {
+    .main-content {
+        .focusing {
+            
+            h1 {
+                font-size: 50px;
+            }
+           
+        }
+
+        .aplanadora-img {
+            position: static;
+            height: 300px;
+
+        }
+    }
+
+    
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1538px) {
+    .main-content {
+        .focusing {
+            
+            h1 {
+                font-size: 50px;
+            }
+           
+        }
+
+        .aplanadora-img {
+            position: static;
+            height: 300px;
+
+        }
+    }
+
+    .mision-vision-container {
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        gap: 1em;
+        padding: 0 10em ;
+
+        .mision-content {
+            width: 100%;
+            
+            img {
+                width: 90%;
+                height: calc(80% - 60px);
+                bottom: 0px;
+            }
+            
+            .mision {
+                height: 250px;
+                bottom: 35px;
+                
+                p {
+                    font-size: 17px;
+                    width: 100%;
+                }
+            }
+        }
+
+        .vision-content {
+            width: 95%;
+
+            
+            
+            img {
+                width: 95%;
+                height: calc(80% - 60px);
+                bottom: 115px;
+            }
+            
+            .vision {
+                width: 85%;
+                height: 250px;
+                bottom: 150px;
+                
+                p {
+                    text-align: left;
+                    font-size: 17px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1536px) {
+    .main-content {
+        .focusing {
+            
+            h1 {
+                font-size: 50px;
+            }
+           
+        }
+
+        .aplanadora-img {
+            position: static;
+            height: 300px;
+
+        }
+    }
+
+    .mision-vision-container {
+
+        .mision-content {
+            
+            img {
+                height: calc(100% - 60px);
+                bottom: 0px;
+            }
+            
+            .mision {
+                height: 200px;
+                bottom: 25px;
+                
+            }
+        }
+
+        .vision-content {
+
+            img {
+                height: calc(100% - 60px);
+                bottom: 35px;
+            }
+            
+            .vision {
+                height: 200px;
+                bottom: 10%;
+                
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media (max-width: 1175px) {
+
+    .main-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .focusing {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5em;
+
+            h1 {
+                font-size: 60px;
+                margin-bottom: .5em;
+                width: 80%;
+
+                br {
+                    display: none;
+                }
+            }
+
+            p {
+                font-size: 20px;
+                width: 80%;
+            }
+        }
+
+        .aplanadora-img {
+            height: 500px;
+            
+        }
+    }
+
+    .top-bar {
+        background-color: #ffffff;
+        display: none;
+        height: 100vh;
+        width: 30%;
+        padding: 0em;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+
+        
+        div {
+            height: 100vh;
+            
+            padding: 0;
+            padding-top: 2em;
+            padding-bottom: 2em;
+
+            justify-content: start;
+            flex-direction: column;
+            gap: 3em;
+
+            h2 {
+                
+                font-size: 28px;
+
+            }
+        }
+
+        ul {
+            flex-direction: column;
+            gap: .5em;
+            width: 100%;
+            cursor: pointer;
+
+            li {
+                height: 50px;
+                width: 90%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 0.8em;
+
+                &:hover {
+                    background-color: #E8F0FF;
+                    
+                    a{
+                        color: #213D88;
+
+                    }
+                }
+                
+                
+                a {
+                    margin-left: 0em;
+                    font-size: 17px;   
+
+                }
+                
+                .contact-us-a {
+                    background-color: #325db9;
+                    width: 100%;
+                    padding: .8em 1em;
+                    border-radius: 0.8em;
+                    color: white;
+                    text-align: center;
+                }
+            }
+        }
+
+    }
+
+
+    .about-content {
+        height: auto;
+        padding: 4em 0;
+
+        .about-us {
+            width: 800px;
+
+            p {
+                font-size: 17px;
+                
+            }
+        }
+
+        .about-cards {
+            flex-direction: column;
+            gap: 0;
+            width: 100%;
+
+            .card {
+                height: 140px;
+                width: 100%;
+                padding: 2em 1em;
+                border-radius: 0;
+
+                .content-card {
+                    width: 70%;
+                    cursor: default;
+                    display: flex;
+                    justify-content: center; 
+                    align-items: center;
+                    flex-direction: column;
+                    h3 {
+                        margin-bottom: 0.8em;
+                    }
+
+                    p {
+                        font-size: 16px;
+                    }
+                }
+
+            }
+        }
+    }
+
+
+    
+
+    .mision-vision-container {
+
+        .mision-content {
+            
+            img {
+                height: calc(100% - 60px);
+                bottom: 0px;
+            }
+            
+            .mision {
+                height: 200px;
+                bottom: 25px;
+
+                p {
+                    font-size: 15px;
+                    width: 100%;
+                }
+
+                h2 {
+                    font-size: 25px;
+                }
+                
+            }
+        }
+
+        .vision-content {
+
+            img {
+                height: calc(100% - 60px);
+                bottom: 35px;
+            }
+            
+            .vision {
+                height: 200px;
+                bottom: 10%;
+                
+                p {
+                    font-size: 15px;
+                    width: 100%;
+                }
+
+                h2 {
+                    font-size: 25px;
+                }
+            }
+        }
+    }
+}

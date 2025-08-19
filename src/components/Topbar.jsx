@@ -39,7 +39,7 @@ function Topbar() {
   return (
     <div className="top-bar">
         <div>
-            <h2>Soluciones</h2>
+            <h2><span>S</span>oluciones</h2>
 
         <Scrollspy
             items={["Acerca", "Maquinaria", "MisionVision", "Contactanos"]}
