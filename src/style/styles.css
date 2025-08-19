@@ -1181,7 +1181,7 @@ body {
             .machinery-wrapper {
                 display: flex;                
                 overflow-x: auto;
-                scroll-snap-type: x mandatory; 
+                scroll-behavior: smooth;
                 -webkit-overflow-scrolling: touch;
                 
                 .machinery-cards {
@@ -1190,7 +1190,8 @@ body {
                     scroll-snap-align: start;   
                     
                     .m-card {
-
+                        flex-shrink: 0;
+                        
                         .content-machinery-card {
                             h3 {
                                 font-size: 25px;
